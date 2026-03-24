@@ -264,7 +264,7 @@ udmodzportal.get('/pair', async (req, res) => {
             const code = await udmodzConnect.requestPairingCode(number);
             res.json({ status: 'success', code });
         } else {
-            res.json({ status: 'already_atuthenticated', message: 'This bot is already paired to api.' });
+            res.json({ status: 'already_authenticated', message: 'This bot is already paired to api.' });
         }
     } catch (err) {
         res.status(500).json({ error: err.message });
@@ -295,11 +295,13 @@ udmodzportal.get('/send', async (req, res) => {
     const { text, msg, botNumber, receiver, otp } = req.query;
     const messageContent = text || msg;
     const cleanedbotud = botNumber?.replace(/[^0-9]/g, '');
-    const cleanedreciud = receiver?.replace(/[^0-9]/g, '') + '@s.whatsapp.net';
+    const cleanedreciud = receiver?.replace(/[^0-9]/g, '');
 
     if (!messageContent || !cleanedbotud || !cleanedreciud) {
         return res.status(400).json({ error: 'text / msg, botNumber, and receiver arent given properly' });
     }
+
+    const receiverJid = cleanedreciud + '@s.whatsapp.net';
 
     let bot = connections.get(cleanedbotud);
 
@@ -324,7 +326,7 @@ udmodzportal.get('/send', async (req, res) => {
     if (bot && (bot.status === 'open' || bot.status === 'connected')) {
         try {
             if (otp) {
-                const interactive = generateWAMessageFromContent(cleanedreciud, {
+                const interactive = generateWAMessageFromContent(receiverJid, {
                     viewOnceMessage: {
                         message: {
                             messageContextInfo: {
@@ -352,11 +354,11 @@ udmodzportal.get('/send', async (req, res) => {
                     }
                 }, { userJid: bot.udmodzConnect.user.id });
 
-                await bot.udmodzConnect.relayMessage(cleanedreciud, interactive.message, {
+                await bot.udmodzConnect.relayMessage(receiverJid, interactive.message, {
                     messageId: interactive.key.id
                 });
             } else {
-                await bot.udmodzConnect.sendMessage(cleanedreciud, { text: messageContent });
+                await bot.udmodzConnect.sendMessage(receiverJid, { text: messageContent });
             }
             res.json({ status: 'success', message: 'Message sent' });
         } catch (err) {
