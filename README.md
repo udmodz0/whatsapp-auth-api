@@ -4,9 +4,6 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:4000ff,50:7c3aed,100:00d4ff&height=220&section=header&text=WhatsApp%20OTP%20API&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=⚡%20Powered%20by%20UDMODZ&descAlignY=55&descSize=18" width="100%"/>
 
 
-<a href="https://github.com/udmodz">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=7C3AED&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=80&lines=🔐+Secure+WhatsApp+Authentication;📲+OTP+Delivery+System+v3.0;⚡+Built+with+Baileys+%7C+Express+%7C+GitHub" alt="Typing SVG" />
-</a>
 
 <br/>
 
@@ -17,9 +14,9 @@
 [![Vercel](https://img.shields.io/badge/Vercel-Ready-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com)
 
 
-[![Version](https://img.shields.io/badge/Version-3.0.0-7c3aed?style=for-the-badge&logoColor=white)](https://github.com/udmodz)
-[![License](https://img.shields.io/badge/License-FREE-00d4ff?style=for-the-badge&logoColor=white)](https://github.com/udmodz)
-[![Status](https://img.shields.io/badge/Status-Active-00ff88?style=for-the-badge&logoColor=white)](https://github.com/udmodz)
+[![Version](https://img.shields.io/badge/Version-3.0.0-7c3aed?style=for-the-badge&logoColor=white)](https://github.com/udmodz0)
+[![License](https://img.shields.io/badge/License-FREE-00d4ff?style=for-the-badge&logoColor=white)](https://github.com/udmodz0)
+[![Status](https://img.shields.io/badge/Status-Active-00ff88?style=for-the-badge&logoColor=white)](https://github.com/udmodz0)
 
 <br/>
 
@@ -227,7 +224,7 @@ GET /health
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/udmodz/auth-wa-api.git
+git clone https://github.com/udmodz0/auth-wa-api.git
 cd auth-wa-api
 
 # 2. Install dependencies
@@ -376,13 +373,13 @@ sequenceDiagram
 
 ## 👨‍💻 Creator
 
-<a href="https://github.com/udmodz">
+<a href="https://github.com/udmodz0">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=2500&pause=800&color=7C3AED&center=true&vCenter=true&repeat=true&width=300&height=50&lines=UDMODZ" alt="UDMODZ" />
 </a>
 
 <br/>
 
-<a href="https://github.com/udmodz">
+<a href="https://github.com/udmodz0">
   <img src="https://img.shields.io/badge/GitHub-udmodz-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
 </a>
 
