@@ -398,7 +398,7 @@ sequenceDiagram
 <br/>
 
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=udmodz&theme=tokyo-night&hide_border=true&area=true&custom_title=UDMODZ%20Contribution%20Graph" width="95%"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=udmodz0&theme=tokyo-night&hide_border=true&area=true&custom_title=UDMODZ%20Contribution%20Graph" width="95%"/>
 
 <br/>
 
